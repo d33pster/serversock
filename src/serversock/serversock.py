@@ -42,7 +42,7 @@ class _server:
 
         Args:
             serverfilename (str): serverfilename to save server data
-            responses (int, optional): Number of response expected from server. Defaults to 1.
+            responses (int, optional): Number of response expected from client. Defaults to 1.
         """
         self.responses = responses
         self.filename = serverfilename
