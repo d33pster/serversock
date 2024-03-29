@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "serversock"
+version = "0.1"
+description = "create multi-client server using multi-threading"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'optioner>=1.4.2',
+    'colorama'
+]
+keywords = ['d33pster', 'serversock', 'socket-server', 'socket', 'multiclient', 'server', 'multiple-client']
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE" }
+authors = [
+    {name = "Soumyo Deep Gupta", email = "deep.main.ac@gmail.com"}
+]
+maintainers = [
+    {name = "Soumyo Deep Gupta", email = "deep.main.ac@gmail.com"}
+]
+
+[project.scripts]
+dsfx = 'serversock.serversock:main'
+
+[project.urls]
+GitHub = 'https://github.com/d33pster/serversock'
+Issues = 'https://github.com/d33pster/serversock/issues'
+Documentation = 'https://d33pster.github.io/serversock/'
